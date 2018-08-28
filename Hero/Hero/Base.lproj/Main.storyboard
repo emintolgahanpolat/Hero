@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dM0-4B-36g">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5Ul-mU-tdF">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="dM0-4B-36g" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tt4-UG-OOQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kq9-28-Pul"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hsw-CW-pW9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6319" y="-116"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainStoryboardID" id="BYZ-38-t0r" customClass="ViewController" customModule="Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jBo-8P-ClN">
+                                <rect key="frame" x="20" y="100" width="280" height="388"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4wr-sv-g9h">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3t6-vj-mf2">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oeA-JM-Zyi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqa-hw-ge7">
+                                                <rect key="frame" x="71" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TyW-st-hrl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIv-Y8-rwL">
+                                                <rect key="frame" x="142" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mb2-xq-TSP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geh-aV-4hh">
+                                                <rect key="frame" x="213" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jbu-gs-OPb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="BFM-x3-8Ea">
+                                        <rect key="frame" x="0.0" y="81" width="280" height="64.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpp-n3-Js6">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="64.5"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DeM-Fx-SFl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0j-n5-YA9">
+                                                <rect key="frame" x="71" y="0.0" width="67" height="64.5"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ykx-d8-0aX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfv-Hb-dUU">
+                                                <rect key="frame" x="142" y="0.0" width="67" height="64.5"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RGL-iS-RO1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTx-k4-OEr">
+                                                <rect key="frame" x="213" y="0.0" width="67" height="64.5"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZL2-qf-35E"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="WBw-eJ-gdN">
+                                        <rect key="frame" x="0.0" y="161.5" width="280" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3o-f3-9p9">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKg-im-R5i"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sV3-S1-DKw">
+                                                <rect key="frame" x="71" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lt0-wV-DmY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb3-mx-qOL">
+                                                <rect key="frame" x="142" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Gr-Td-g3J"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-ad-70D">
+                                                <rect key="frame" x="213" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w7J-dy-V4o"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="APO-Q0-EVB">
+                                        <rect key="frame" x="0.0" y="242.5" width="280" height="64.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfR-Ro-DnL">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="64.5"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KbU-kt-DR8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TG4-3Y-k7c">
+                                                <rect key="frame" x="71" y="0.0" width="67" height="64.5"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QPi-aJ-KPL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ix-eM-F76">
+                                                <rect key="frame" x="142" y="0.0" width="67" height="64.5"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pY0-Tj-OhN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLQ-P1-Br8">
+                                                <rect key="frame" x="213" y="0.0" width="67" height="64.5"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a7t-9W-VkR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="uDx-9D-MhA">
+                                        <rect key="frame" x="0.0" y="323" width="280" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-Pm-Zmd">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UAn-NE-f51"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syf-VN-bO2">
+                                                <rect key="frame" x="71" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QOE-g7-bhk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FT7-DR-MGL">
+                                                <rect key="frame" x="142" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="012-F3-0lJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jya-KT-6zF">
+                                                <rect key="frame" x="213" y="0.0" width="67" height="65"/>
+                                                <state key="normal" backgroundImage="H-80-80"/>
+                                                <connections>
+                                                    <action selector="turnCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ua0-Q4-UHD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jBo-8P-ClN" secondAttribute="trailing" constant="20" id="FbP-RU-Mk3"/>
+                            <constraint firstItem="jBo-8P-ClN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="dVp-qV-x43"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jBo-8P-ClN" secondAttribute="bottom" constant="80" id="qk8-fn-5DL"/>
+                            <constraint firstItem="jBo-8P-ClN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yjp-oW-zag"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RUJ-RL-0Qn"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="cardButton" destination="iqa-hw-ge7" id="Yaz-W5-aVp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5578.125" y="-116.19718309859155"/>
+        </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="Gle-bL-fYl">
+            <objects>
+                <viewController storyboardIdentifier="GameOverViewControllerID" id="zYK-bP-XTp" customClass="GameOverViewController" customModule="Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GDf-iz-Nhi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="w5" translatesAutoresizingMaskIntoConstraints="NO" id="ujf-vC-0xp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBs-a1-Mza">
+                                <rect key="frame" x="4" y="84" width="312" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgU-0d-cTi">
+                                <rect key="frame" x="120" y="448" width="80" height="80"/>
+                                <state key="normal" image="replay"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="zYK-bP-XTp" eventType="touchUpInside" id="v3f-1L-FbN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY AGAIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBY-ZV-yDa">
+                                <rect key="frame" x="4" y="411" width="312" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qEY-kK-xZI" firstAttribute="trailing" secondItem="OBY-ZV-yDa" secondAttribute="trailing" constant="4" id="8x4-bX-5iM"/>
+                            <constraint firstItem="qEY-kK-xZI" firstAttribute="trailing" secondItem="xBs-a1-Mza" secondAttribute="trailing" constant="4" id="Cic-FH-ehV"/>
+                            <constraint firstItem="xBs-a1-Mza" firstAttribute="top" secondItem="qEY-kK-xZI" secondAttribute="top" constant="64" id="DxO-Jj-Ifo"/>
+                            <constraint firstItem="OBY-ZV-yDa" firstAttribute="leading" secondItem="qEY-kK-xZI" secondAttribute="leading" constant="4" id="Mo9-ZE-y29"/>
+                            <constraint firstItem="qEY-kK-xZI" firstAttribute="trailing" secondItem="IgU-0d-cTi" secondAttribute="trailing" constant="120" id="fBw-8L-GVy"/>
+                            <constraint firstItem="xBs-a1-Mza" firstAttribute="leading" secondItem="qEY-kK-xZI" secondAttribute="leading" constant="4" id="gpH-Nr-lvh"/>
+                            <constraint firstItem="qEY-kK-xZI" firstAttribute="bottom" secondItem="OBY-ZV-yDa" secondAttribute="bottom" constant="128" id="lyd-Y7-4bT"/>
+                            <constraint firstItem="qEY-kK-xZI" firstAttribute="bottom" secondItem="IgU-0d-cTi" secondAttribute="bottom" constant="40" id="ndn-BH-i6O"/>
+                            <constraint firstItem="IgU-0d-cTi" firstAttribute="leading" secondItem="qEY-kK-xZI" secondAttribute="leading" constant="120" id="sWk-0z-uVv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qEY-kK-xZI"/>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="ujf-vC-0xp" id="PI0-w1-Fdo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t5r-Qf-4Xm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4843.125" y="-117.25352112676056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="H-80-80" width="80" height="80"/>
+        <image name="replay" width="80" height="80"/>
+        <image name="w5" width="564" height="1003"/>
+    </resources>
+</document>
